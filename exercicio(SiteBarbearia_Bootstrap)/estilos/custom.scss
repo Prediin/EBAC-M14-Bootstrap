@@ -7,4 +7,44 @@ $danger:        #8B3A3A; // Vinho avermelhado
 $light:         #F4F0E8; // Marfim
 $dark:          #181716; // Preto carvão
 
+.text-shadow {
+    text-shadow: 0px 2px 4px black;
+}
+
+.instagram {
+    display: inline-flex;
+    color: #e1306c;
+  }
+
+  .instagram svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .instagram:hover {
+    color: #833ab4;
+  }
+
+.btn-tiktok {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+.icone-x {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
