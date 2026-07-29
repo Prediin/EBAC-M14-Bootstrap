@@ -3,124 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilo Livre</title>
+
+    <meta
+        name="description"
+        content="Estilo Livre: barbearia moderna com profissionais capacitados, atendimento personalizado e serviços de alto padrão."
+    >
+
+    <title>Estilo Livre | Barbearia</title>
+
     <link rel="stylesheet" href="estilos/custom.css">
 </head>
-<body class="bg-dark overflow-x-hidden pb-5">
+
+<body class="bg-dark overflow-x-hidden">
+
     <header class="container-fluid px-0 bg-primary rounded-bottom-3">
-        <div class="row">
-            <div class="col-2">
-                <img src="imagens/estilo_livre_logo.png" alt="Estilo Livre Logo" title="Estilo Livre" class="p-1" style="width: 5.5rem;">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center gap-2 py-1">
+                <a href="index.html" class="flex-shrink-0">
+                    <img
+                        src="imagens/estilo_livre_logo.png"
+                        alt="Logo da Barbearia Estilo Livre"
+                        title="Estilo Livre"
+                        class="p-1"
+                        width="88"
+                        height="88"
+                    >
+                </a>
+
+                <div>
+                    <h1 class="fw-bold fs-2 mb-0">Estilo Livre</h1>
+                    <p class="mb-0">Nossa qualidade, seu estilo</p>
+                </div>
             </div>
-            <div class="col-auto pt-2">
-                <h1 class="row fw-bold text">Estilo Livre</h1>
-                <p class="row">Nossa qualidade, seu estilo</p>
+        </div>
+
+        <nav
+            class="navbar navbar-expand-lg bg-body-secondary rounded-bottom-3"
+            aria-label="Navegação principal"
+        >
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold" href="index.html">
+                    Menu
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir ou fechar menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="index.html"
+                            >
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenos.html">
+                                Sobre Nós
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">
+                                Serviços
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos.html">
+                                Depoimentos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatos.html">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="row-auto">
-                <nav class="navbar navbar-expand-lg bg-body-secondary rounded-bottom-3">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Menu</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Depoimentos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                            </li>
-                        </ul>
+        </nav>
+    </header>
+
+    <main class="container py-3">
+        <section id="home">
+            <h2 class="fw-bold text-white border-bottom pb-2 mb-4">
+                Home
+            </h2>
+
+            <div
+                id="carouselHome"
+                class="carousel slide border border-primary border-2 rounded-3 overflow-hidden"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselHome"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Exibir primeiro slide"
+                    ></button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselHome"
+                        data-bs-slide-to="1"
+                        aria-label="Exibir segundo slide"
+                    ></button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselHome"
+                        data-bs-slide-to="2"
+                        aria-label="Exibir terceiro slide"
+                    ></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="imagens/slide_1.jpg"
+                            class="d-block w-100"
+                            alt="Profissional realizando um corte de cabelo"
+                        >
+
+                        <div class="carousel-caption">
+                            <h3 class="h5 text-shadow">
+                                Profissionais confiáveis e capacitados
+                            </h3>
+
+                            <p class="text-shadow mb-0">
+                                Confiança em cada detalhe do seu corte e estilo.
+                            </p>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main class="container">
-        <div id="home" class="pt-2">
-            <h2 class="fw-bold text-white border-bottom">Home</h2>
-            <div id="carouselExampleCaptions" class="carousel slide border border-primary border-2 rounded-3">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner rounded-3">
-                    <div class="carousel-item active">
-                    <img src="imagens/slide_1.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-md-block ">
-                        <h5 class="text-shadow">Com profissionais confiáveis e treinados</h5>
-                        <p class="text-shadow">100% de confiança em seu corte e estilo.</p>
-                    </div>
-                    </div>
+
                     <div class="carousel-item">
-                    <img src="imagens/slide_2.jpg" class="d-block w-100" alt="Slide 2">
-                    <div class="carousel-caption d-md-block">
-                        <h5 class="text-shadow">Qualidade de alto nível</h5>
-                        <p class="text-shadow">Processo e finalização que com o resultado impressionante.</p>
+                        <img
+                            src="imagens/slide_2.jpg"
+                            class="d-block w-100"
+                            alt="Finalização de um corte de cabelo"
+                            loading="lazy"
+                        >
+
+                        <div class="carousel-caption">
+                            <h3 class="h5 text-shadow">
+                                Qualidade de alto nível
+                            </h3>
+
+                            <p class="text-shadow mb-0">
+                                Processo cuidadoso e finalização com resultados impressionantes.
+                            </p>
+                        </div>
                     </div>
-                    </div>
+
                     <div class="carousel-item">
-                    <img src="imagens/slide_3.jpg" class="d-block w-100" alt="Slide 3">
-                    <div class="carousel-caption d-md-block">
-                        <h5 class="text-shadow">Intrumentos de marcas importadas</h5>
-                        <p class="text-shadow">Tecnologia avançada de padrão premium.</p>
-                    </div>
+                        <img
+                            src="imagens/slide_3.jpg"
+                            class="d-block w-100"
+                            alt="Instrumentos profissionais de barbearia"
+                            loading="lazy"
+                        >
+
+                        <div class="carousel-caption">
+                            <h3 class="h5 text-shadow">
+                                Instrumentos de marcas importadas
+                            </h3>
+
+                            <p class="text-shadow mb-0">
+                                Tecnologia avançada e equipamentos de padrão premium.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselHome"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+
+                    <span class="visually-hidden">
+                        Slide anterior
+                    </span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselHome"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+
+                    <span class="visually-hidden">
+                        Próximo slide
+                    </span>
                 </button>
             </div>
-            <div class="d-grid gap-2 pt-3">
-                <h3 class="text-light">Confira nossas redes sociais:</h3>
-                <button class="btn btn-danger" type="button"><svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
+        </section>
+
+        <section class="pt-4" aria-labelledby="tituloRedesSociais">
+            <h2 id="tituloRedesSociais" class="h3 text-light mb-3">
+                Confira nossas redes sociais
+            </h2>
+
+            <div class="d-grid gap-2">
+                <a
+                    href="#"
+                    class="btn btn-danger d-flex align-items-center justify-content-center gap-2"
+                    aria-label="Acessar o Instagram da Estilo Livre"
                 >
-                    <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
-                </svg> Instagram</button>
-                <button class="btn btn-light" type="button"> <svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    fill="currentColor"
-                    aria-hidden="true"
-                >
-                    <path d="M15.6 3c.4 2.2 1.7 3.5 3.9 3.7v3.1c-1.5 0-2.8-.4-3.9-1.2v6.2a5.8 5.8 0 1 1-5-5.8v3.2a2.7 2.7 0 1 0 1.8 2.6V3h3.2z"/>
-                </svg> TikTok</button>
-                <button class="btn btn-dark border-light" type="button"><svg
-                    class="icone-x"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
                     >
-                    <path d="M18.244 2H21.5l-7.112 8.13L22.75 22h-6.546l-5.126-6.7L5.22 22H1.96l7.607-8.695L1.55 2h6.712l4.634 6.126L18.244 2Zm-1.143 18h1.804L7.283 3.895H5.347L17.101 20Z"/>
-                    </svg> (Twitter)</button>
+                        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle
+                            cx="17.5"
+                            cy="6.5"
+                            r="1"
+                            fill="currentColor"
+                            stroke="none"
+                        ></circle>
+                    </svg>
+
+                    Instagram
+                </a>
+
+                <a
+                    href="#"
+                    class="btn btn-light d-flex align-items-center justify-content-center gap-2"
+                    aria-label="Acessar o TikTok da Estilo Livre"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path d="M15.6 3c.4 2.2 1.7 3.5 3.9 3.7v3.1c-1.5 0-2.8-.4-3.9-1.2v6.2a5.8 5.8 0 1 1-5-5.8v3.2a2.7 2.7 0 1 0 1.8 2.6V3h3.2z"></path>
+                    </svg>
+
+                    TikTok
+                </a>
+
+                <a
+                    href="#"
+                    class="btn btn-dark border-light d-flex align-items-center justify-content-center gap-2"
+                    aria-label="Acessar o perfil da Estilo Livre no X"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path d="M18.244 2H21.5l-7.112 8.13L22.75 22h-6.546l-5.126-6.7L5.22 22H1.96l7.607-8.695L1.55 2h6.712l4.634 6.126L18.244 2Zm-1.143 18h1.804L7.283 3.895H5.347L17.101 20Z"></path>
+                    </svg>
+
+                    X (Twitter)
+                </a>
             </div>
-        </div>
+        </section>
     </main>
+
+    <footer class="container-fluid text-center border-top border-secondary mt-5 py-4">
+        <p class="text-white-50 mb-0">
+            &copy; 2026 Estilo Livre. Todos os direitos reservados.
+        </p>
+    </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>

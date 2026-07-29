@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Entre em contato com a Barbearia Estilo Livre para tirar dúvidas, consultar horários e solicitar informações."
+    >
+
+    <title>Contato | Estilo Livre</title>
+
+    <link rel="stylesheet" href="estilos/custom.css">
+</head>
+
+<body class="bg-dark overflow-x-hidden">
+
+    <header class="container-fluid px-0 bg-primary rounded-bottom-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center gap-2 py-1">
+                <a href="index.html" class="flex-shrink-0">
+                    <img
+                        src="imagens/estilo_livre_logo.png"
+                        alt="Logo da Barbearia Estilo Livre"
+                        title="Estilo Livre"
+                        class="p-1"
+                        width="88"
+                        height="88"
+                    >
+                </a>
+
+                <div>
+                    <h1 class="fw-bold fs-2 mb-0">
+                        Estilo Livre
+                    </h1>
+
+                    <p class="mb-0">
+                        Nossa qualidade, seu estilo
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <nav
+            class="navbar navbar-expand-lg bg-body-secondary rounded-bottom-3"
+            aria-label="Navegação principal"
+        >
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold" href="index.html">
+                    Menu
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir ou fechar menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenos.html">
+                                Sobre Nós
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">
+                                Serviços
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos.html">
+                                Depoimentos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="contato.html"
+                            >
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-3">
+        <section
+            id="contato"
+            aria-labelledby="tituloContato"
+        >
+            <h2
+                id="tituloContato"
+                class="fw-bold text-white border-bottom border-primary pb-2 mb-4"
+            >
+                Contato
+            </h2>
+
+            <div class="text-center mb-5">
+                <span class="badge text-bg-primary mb-3">
+                    Fale conosco
+                </span>
+
+                <h3 class="fw-bold text-white">
+                    Estamos prontos para atender você
+                </h3>
+
+                <p
+                    class="text-white-50 mx-auto mb-0"
+                    style="max-width: 720px;"
+                >
+                    Envie sua mensagem para tirar dúvidas, consultar serviços
+                    ou obter mais informações sobre nossos atendimentos.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card bg-body-secondary border border-primary border-2 shadow-lg">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="h4 fw-bold mb-4">
+                                Envie uma mensagem
+                            </h3>
+
+                            <form action="#" method="post">
+                                <div class="mb-4">
+                                    <label
+                                        for="nome"
+                                        class="form-label fw-semibold"
+                                    >
+                                        Nome
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nome"
+                                        name="nome"
+                                        placeholder="Digite seu nome completo"
+                                        autocomplete="name"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="mb-4">
+                                    <label
+                                        for="email"
+                                        class="form-label fw-semibold"
+                                    >
+                                        E-mail
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="exemplo@email.com"
+                                        autocomplete="email"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="mb-4">
+                                    <label
+                                        for="mensagem"
+                                        class="form-label fw-semibold"
+                                    >
+                                        Mensagem
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        id="mensagem"
+                                        name="mensagem"
+                                        rows="6"
+                                        placeholder="Digite sua mensagem"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div class="d-grid d-sm-flex justify-content-sm-end">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-lg fw-semibold px-5"
+                                    >
+                                        Enviar mensagem
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section
+                class="card bg-primary border-0 shadow-lg mt-5"
+                aria-labelledby="tituloAtendimento"
+            >
+                <div class="card-body text-center p-4 p-md-5">
+                    <h2
+                        id="tituloAtendimento"
+                        class="h3 fw-bold"
+                    >
+                        Renove seu visual com a Estilo Livre
+                    </h2>
+
+                    <p
+                        class="fs-5 mx-auto mb-0"
+                        style="max-width: 720px;"
+                    >
+                        Entre em contato para consultar serviços, valores e
+                        horários disponíveis para atendimento.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="container-fluid text-center border-top border-secondary mt-5 py-4">
+        <p class="text-white-50 mb-0">
+            &copy; 2026 Estilo Livre. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
